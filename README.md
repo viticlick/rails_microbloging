@@ -24,3 +24,9 @@ $ rails server
 ```
 For more information, see the
 [*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+
+# How to build it
+```bash
+docker-compose build web
+docker-compose run --rm web bundle install
+```

@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  web:
+    image: sample_app
+    build: .
+    volumes:
+      - .:/opt/app
+      - app_bundle:/usr/local/bundle
+    stdin_open: true
+    tty: true
+volumes:
+  app_bundle:
+
